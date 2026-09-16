@@ -24,6 +24,7 @@ jobs:
 
       - name: Azure login
         uses: azure/login@v2
+        continue-on-error: true
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
